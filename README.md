@@ -11,5 +11,5 @@ Selenium Home task is at branch [WebUI](https://github.com/EugeneShatikhin/Evgen
     * NUnit
     * NUnit3TestAdapter
 4. Run tests!
-
+  
 ** Selenium Home task running instructions are in WebUI branch **
