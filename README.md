@@ -14,5 +14,6 @@ Due to the nature of these tests, they are better run in this order:
 2. PayGradeAddFeature (1 - Unique, 2 - Which already exists)
 3. AddCurrencyFeature (1 - Successfully add currency, 2 - Adding currency fails)
 4. DeleteCurrencyFeature
-5. DeletePayGradeFeaturu
+5. DeletePayGradeFeature
 
+Code utilizes page object model with BasePageObject.cs, Login.cs, PayGrade.cs.
