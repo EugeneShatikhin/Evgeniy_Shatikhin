@@ -80,6 +80,9 @@ namespace Lab6WebUITests.Features
 #line 4
   testRunner.Given("I am logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
+#line 5
+  testRunner.And("I want to add new Pay Grade", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
@@ -98,7 +101,7 @@ namespace Lab6WebUITests.Features
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("name", name);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("I want to create uniquely named Pay Grade", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 7
+#line 8
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -121,11 +124,8 @@ namespace Lab6WebUITests.Features
 #line 3
  this.FeatureBackground();
 #line hidden
-#line 8
-  testRunner.Given(string.Format("I am entering name {0}", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 9
-  testRunner.And("it is valid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.Given(string.Format("I am entering name {0}", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
   testRunner.When("i press Save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -153,7 +153,7 @@ namespace Lab6WebUITests.Features
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("name", name);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("I want to create Pay Grade which already exists", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 17
+#line 18
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -176,11 +176,8 @@ namespace Lab6WebUITests.Features
 #line 3
  this.FeatureBackground();
 #line hidden
-#line 18
-  testRunner.Given(string.Format("I am entering name {0}", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 19
-  testRunner.And("it is already taken", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.Given(string.Format("I am entering name {0}", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 20
   testRunner.When("i press Save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

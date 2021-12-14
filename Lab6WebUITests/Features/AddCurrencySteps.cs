@@ -12,25 +12,18 @@ namespace Lab6WebUITests.Features
     [Binding]
     public class AddCurrencySteps
     {
-        public WebDriver driver;
         private PayGrade pageObject;
         public int curtableelemCounter;
         public bool empty;
         [AfterScenario("ScAddCurrency")]
         public void Close()
         {
-            driver.Quit();
+            pageObject.Quit();
         }
         [Given(@"EvgShat Pay Grade is already created")]
         public void GivenEvgShatPayGradeIsAlreadyCreated()
         {
-            driver = new ChromeDriver(Global.path);
-            var login = new Login(driver);
-            login.EnterUsername("Admin");
-            login.EnterPassword("admin123");
-            login.PressLogin();
-            login.GoToURL("https://opensource-demo.orangehrmlive.com/index.php/admin/viewPayGrades");
-            pageObject = new PayGrade(driver);
+            pageObject = new PayGrade();
             pageObject.Click(pageObject.GetElement(By.LinkText("EvgShat")));
             pageObject.AddCurrency();
             curtableelemCounter = pageObject.CountTableIntros(); // default 1, 1 after one insertion, 2 after two insertions.
@@ -60,21 +53,7 @@ namespace Lab6WebUITests.Features
         {
             pageObject.SaveCurrency();
         }
-        
-        [When(@"data is valid")]
-        public void WhenDataIsValid()
-        {
-            bool cond = pageObject.CurrencyValidate() && pageObject.MinimumSalaryValidate() && pageObject.MaximumSalaryValidate();
-            Assert.True(cond, "Data is not valid.");
-        }
-        
-        [When(@"data is invalid")]
-        public void WhenDataIsInvalid()
-        {
-            bool cond = pageObject.CurrencyValidate() && pageObject.MinimumSalaryValidate() && pageObject.MaximumSalaryValidate();
-            Assert.True(!cond, "Data is valid.");
-        }
-        
+
         [Then(@"new currency should be added")]
         public void ThenNewCurrencyShouldBeAdded()
         {

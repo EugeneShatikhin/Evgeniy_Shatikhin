@@ -108,3 +108,4 @@ C:\Users\EShat\source\repos\Lab6WebUITests\Lab6WebUITests\obj\Release\netcoreapp
 C:\Users\EShat\source\repos\Lab6WebUITests\Lab6WebUITests\obj\Release\netcoreapp3.1\Lab6WebUITests.dll
 C:\Users\EShat\source\repos\Lab6WebUITests\Lab6WebUITests\obj\Release\netcoreapp3.1\Lab6WebUITests.pdb
 C:\Users\EShat\source\repos\Lab6WebUITests\Lab6WebUITests\obj\Release\netcoreapp3.1\Lab6WebUITests.genruntimeconfig.cache
+C:\Users\EShat\source\repos\Lab6WebUITests\Lab6WebUITests\obj\Release\netcoreapp3.1\Lab6WebUITests.csprojAssemblyReference.cache

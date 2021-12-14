@@ -12,25 +12,18 @@ namespace Lab6WebUITests.Features
     [Binding]
     public class DeletePayGradeSteps
     {
-        public WebDriver driver;
         private PayGrade pageObject;
         private string gradeName;
 
         [AfterScenario("ScDeletePayGrade")]
         public void Close()
         {
-            driver.Quit();
+            pageObject.Quit();
         }
         [Given(@"Pay Grade exists")]
         public void GivenPayGradeExists()
         {
-            driver = new ChromeDriver(Global.path);
-            var login = new Login(driver);
-            login.EnterUsername("Admin");
-            login.EnterPassword("admin123");
-            login.PressLogin();
-            login.GoToURL("https://opensource-demo.orangehrmlive.com/index.php/admin/viewPayGrades");
-            pageObject = new PayGrade(driver);
+            pageObject = new PayGrade();
         }
         
         [Given(@"pay grade (.*) is selected")]
@@ -52,7 +45,7 @@ namespace Lab6WebUITests.Features
         [Then(@"pay grade should be deleted")]
         public void ThenPayGradeShouldBeDeleted()
         {
-            Assert.True(driver.FindElements(By.LinkText(gradeName)).Count == 0, "Pay Grade " + gradeName + " was not deleted.");
+            Assert.True(Global.driver.FindElements(By.LinkText(gradeName)).Count == 0, "Pay Grade " + gradeName + " was not deleted.");
         }
     }
 }

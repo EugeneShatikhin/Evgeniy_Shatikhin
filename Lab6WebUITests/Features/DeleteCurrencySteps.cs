@@ -12,24 +12,17 @@ namespace Lab6WebUITests.Features
     [Binding] 
     public class DeleteCurrencySteps
     {
-        public WebDriver driver;
         private PayGrade pageObject;
         private string curr;
         [AfterScenario("ScDeleteCurrency")]
         public void Close()
         {
-            driver.Quit();
+            pageObject.Quit();
         }
         [Given(@"Currency exists")]
         public void GivenCurrencyExists()
         {
-            driver = new ChromeDriver(Global.path);
-            var login = new Login(driver);
-            login.EnterUsername("Admin");
-            login.EnterPassword("admin123");
-            login.PressLogin();
-            login.GoToURL("https://opensource-demo.orangehrmlive.com/index.php/admin/viewPayGrades");
-            pageObject = new PayGrade(driver);
+            pageObject = new PayGrade();
             pageObject.Click(pageObject.GetElement(By.LinkText("EvgShat")));
         }
         [Given(@"some (.*) is selected")]
@@ -48,7 +41,7 @@ namespace Lab6WebUITests.Features
         [Then(@"it should be deleted")]
         public void ThenItShouldBeDeleted()
         {
-            var elems = driver.FindElements(By.XPath("//input[@value='" + curr + "']")).Count;
+            var elems = Global.driver.FindElements(By.XPath("//input[@value='" + curr + "']")).Count;
             Assert.True(elems == 0, curr + "was not deleted");
         }
     }

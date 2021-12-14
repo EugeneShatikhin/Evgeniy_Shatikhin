@@ -78,7 +78,10 @@ namespace Lab6WebUITests.Features
 #line 2
  #line hidden
 #line 3
-  testRunner.Given("Pay Grade exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("I am logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 4
+  testRunner.And("Pay Grade exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
@@ -98,7 +101,7 @@ namespace Lab6WebUITests.Features
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("pay grade", payGrade);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deleting pay grade", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 6
+#line 7
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -121,13 +124,13 @@ namespace Lab6WebUITests.Features
 #line 2
  this.FeatureBackground();
 #line hidden
-#line 7
+#line 8
  testRunner.Given(string.Format("pay grade {0} is selected", payGrade), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 8
+#line 9
  testRunner.When("I click Remove", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 9
+#line 10
  testRunner.Then("pay grade should be deleted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

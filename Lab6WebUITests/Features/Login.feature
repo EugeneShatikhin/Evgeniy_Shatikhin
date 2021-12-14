@@ -8,8 +8,8 @@ Feature: Log in
 		Given I entered username <username>
 		And entered password <password>
 		When i pressed Login
-		And credentials are valid
 		Then i should be logged in
+
 	Examples:
 		| username | password |
 		| Admin    | admin123 |
@@ -19,7 +19,6 @@ Feature: Log in
 		Given I entered username <username>
 		And entered password <password>
 		When i pressed Login
-		And credentials are invalid
 		Then i should see <error message>
 		
 	Examples: 

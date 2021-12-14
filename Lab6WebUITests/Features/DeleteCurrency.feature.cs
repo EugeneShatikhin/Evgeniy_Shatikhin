@@ -78,7 +78,10 @@ namespace Lab6WebUITests.Features
 #line 3
  #line hidden
 #line 4
-  testRunner.Given("Currency exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("I am logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 5
+  testRunner.And("Currency exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
@@ -98,7 +101,7 @@ namespace Lab6WebUITests.Features
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("currency", currency);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deleting currency", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 7
+#line 8
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -121,13 +124,13 @@ namespace Lab6WebUITests.Features
 #line 3
  this.FeatureBackground();
 #line hidden
-#line 8
+#line 9
  testRunner.Given(string.Format("some {0} is selected", currency), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 9
+#line 10
  testRunner.When("I click Delete", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 10
+#line 11
  testRunner.Then("it should be deleted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

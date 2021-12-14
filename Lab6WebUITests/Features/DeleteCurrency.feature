@@ -1,7 +1,8 @@
 ﻿Feature: DeleteCurrency
 
 	Background: 
-		Given Currency exists
+		Given I am logged in
+		And Currency exists
 
 	@ScDeleteCurrency
 	Scenario Outline: Deleting currency

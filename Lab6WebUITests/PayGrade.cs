@@ -15,7 +15,7 @@ namespace Lab6WebUITests
         public WebElement minimumSalary;
         public WebElement maximumSalary;
         public WebElement saveCurrency;
-        public PayGrade(WebDriver wd) : base(wd)
+        public PayGrade()
         {
             GoToURL("https://opensource-demo.orangehrmlive.com/index.php/admin/viewPayGrades");
             btnAdd = GetElement(By.Id("btnAdd"));

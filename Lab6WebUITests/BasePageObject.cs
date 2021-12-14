@@ -9,15 +9,10 @@ namespace Lab6WebUITests
     static class Global
     {
         public static string path = @"C:\Users\EShat\Desktop\3 курс\dev_test\lab6 - web ui\";
+        public static WebDriver driver;
     }
     class BasePageObject
     {
-        public WebDriver driver;
-        
-        public BasePageObject(WebDriver wd)
-        {
-            driver = wd;
-        }
         public void Click(WebElement elem)
         {
             elem.Click();
@@ -28,7 +23,7 @@ namespace Lab6WebUITests
         }
         public WebElement GetElement(By by)
         {
-            return (WebElement)driver.FindElement(by);
+            return (WebElement)Global.driver.FindElement(by);
         }
         public string GetAttribute(By by, string attr)
         {
@@ -40,11 +35,11 @@ namespace Lab6WebUITests
         }
         public void GoToURL(string url)
         {
-            driver.Navigate().GoToUrl(url);
+            Global.driver.Navigate().GoToUrl(url);
         }
         public void Quit()
         {
-            driver.Quit();
+            Global.driver.Quit();
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Lab6WebUITests
         public WebElement username;
         public WebElement password;
         public WebElement loginBtn;
-        public Login(WebDriver wd) : base (wd)
+        public Login()
         {
             GoToURL("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
             username = GetElement(By.Id("txtUsername"));

@@ -78,7 +78,10 @@ namespace Lab6WebUITests.Features
 #line 3
  #line hidden
 #line 4
-  testRunner.Given("EvgShat Pay Grade is already created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("I am logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 5
+  testRunner.And("EvgShat Pay Grade is already created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
@@ -100,7 +103,7 @@ namespace Lab6WebUITests.Features
             argumentsOfScenario.Add("minimum", minimum);
             argumentsOfScenario.Add("maximum", maximum);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successfully add currency", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 7
+#line 8
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -123,20 +126,17 @@ namespace Lab6WebUITests.Features
 #line 3
  this.FeatureBackground();
 #line hidden
-#line 8
+#line 9
   testRunner.Given(string.Format("currency {0} is entered", currency), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 9
+#line 10
   testRunner.And(string.Format("minimum salary {0} is entered", minimum), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 10
+#line 11
   testRunner.And(string.Format("maximum salary {0} is entered", maximum), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 11
-  testRunner.When("data is valid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
 #line 12
-  testRunner.And("I click Save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.When("I click Save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 13
   testRunner.Then("new currency should be added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -199,15 +199,12 @@ namespace Lab6WebUITests.Features
   testRunner.And(string.Format("maximum salary {0} is entered", maximum), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 24
-  testRunner.When("data is invalid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.When("I click Save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 25
-  testRunner.And("I click Save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 26
   testRunner.Then("new currency is not added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 27
+#line 26
   testRunner.And(string.Format("I receive {0}", errorMessage), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }

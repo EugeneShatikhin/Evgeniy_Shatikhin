@@ -1,6 +1,7 @@
 ﻿Feature: DeletePayGrade
 	Background: 
-		Given Pay Grade exists
+		Given I am logged in
+		And Pay Grade exists
 
 	@ScDeletePayGrade
 	Scenario Outline: Deleting pay grade

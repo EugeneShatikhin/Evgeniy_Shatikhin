@@ -1,15 +1,15 @@
 ﻿Feature: AddCurrency
 	Add currency for existing Pay Grade
 	Background:
-		Given EvgShat Pay Grade is already created
+		Given I am logged in
+		And EvgShat Pay Grade is already created
 
 	@ScAddCurrency
 	Scenario Outline: Successfully add currency
 		Given currency <currency> is entered
 		And minimum salary <minimum> is entered
 		And maximum salary <maximum> is entered
-		When data is valid
-		And I click Save
+		When I click Save
 		Then new currency should be added
 
 		Examples: 
@@ -21,8 +21,7 @@
 		Given currency <currency> is entered
 		And minimum salary <minimum> is entered
 		And maximum salary <maximum> is entered
-		When data is invalid
-		And I click Save
+		When I click Save
 		Then new currency is not added
 		And I receive <error message>
 
