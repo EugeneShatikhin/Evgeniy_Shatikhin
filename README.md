@@ -13,5 +13,5 @@ WebAPI home task is at branch [WebAPI](https://github.com/EugeneShatikhin/Evgeni
     * NUnit3TestAdapter
 4. Run tests!
   
-**Selenium Home task running instructions are in WebUI branch!**
-**WebAPI Home task running instructions are in WebAPI branch!**
+**Selenium Home task running instructions are in WebUI branch!**  
+**WebAPI Home task running instructions are in WebAPI branch!**  
