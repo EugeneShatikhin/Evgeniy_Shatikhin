@@ -1,7 +1,8 @@
 # D&amp;T tasks, 2021    
   
 C# home tasks are at branch [C#\_tasks](https://github.com/EugeneShatikhin/Evgeniy_Shatikhin/tree/C%23_tasks)  
-Selenium Home task is at branch [WebUI](https://github.com/EugeneShatikhin/Evgeniy_Shatikhin/tree/WebUI)  
+Selenium home task is at branch [WebUI](https://github.com/EugeneShatikhin/Evgeniy_Shatikhin/tree/WebUI)  
+WebAPI home task is at branch [WebAPI](https://github.com/EugeneShatikhin/Evgeniy_Shatikhin/tree/WebAPI)
   
 **To launch C# home tasks:**
 1. Download .cs file
@@ -13,3 +14,4 @@ Selenium Home task is at branch [WebUI](https://github.com/EugeneShatikhin/Evgen
 4. Run tests!
   
 **Selenium Home task running instructions are in WebUI branch!**
+**WebAPI Home task running instructions are in WebAPI branch!**
