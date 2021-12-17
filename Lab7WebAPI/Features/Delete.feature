@@ -1,4 +1,4 @@
-﻿Feature: Delete
+﻿Feature: 3Delete
 	Delete file
 
 Scenario Outline: Delete existing file

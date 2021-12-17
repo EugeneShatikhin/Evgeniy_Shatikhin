@@ -10,7 +10,7 @@ namespace Lab7WebAPI.Features
     [Binding]
     public class DeleteSteps
     {
-        [Given(@"(.*) is uploaded to Dropbox"), Scope(Feature = "Delete")]
+        [Given(@"(.*) is uploaded to Dropbox"), Scope(Feature = "3Delete")]
         public void GivenIsUploadedToDropbox(string p0)
         {
             RequestBuilder b = new DeleteFile();

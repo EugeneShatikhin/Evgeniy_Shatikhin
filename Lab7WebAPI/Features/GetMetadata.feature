@@ -1,4 +1,4 @@
-﻿Feature: GetMetadata
+﻿Feature: 2GetMetadata
 	Get file metadata
 
 Scenario Outline: Get existing file metadata

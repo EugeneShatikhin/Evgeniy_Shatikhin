@@ -9,7 +9,7 @@ namespace Lab7WebAPI.Features
     [Binding]
     public class UploadFileSteps
     {
-        [Given(@"I have some (.*) i want to upload to (.*)"), Scope(Feature = "UploadFile")]
+        [Given(@"I have some (.*) i want to upload to (.*)"), Scope(Feature = "1UploadFile")]
         public void GivenIHaveSomeIWantToUploadTo(string p0, string p1)
         {
             RequestBuilder b = new UploadFile();

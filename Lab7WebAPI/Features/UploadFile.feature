@@ -1,4 +1,4 @@
-﻿Feature: UploadFile
+﻿Feature: 1UploadFile
 	Uploads file to Dropbox
 
 Scenario Outline: Upload some picture

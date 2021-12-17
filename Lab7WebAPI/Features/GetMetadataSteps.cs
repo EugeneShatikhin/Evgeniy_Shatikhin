@@ -10,7 +10,7 @@ namespace Lab7WebAPI.Features
     [Binding]
     public class GetMetadataSteps
     {
-        [Given(@"(.*) is uploaded to Dropbox"), Scope(Feature = "GetMetadata")]
+        [Given(@"(.*) is uploaded to Dropbox"), Scope(Feature = "2GetMetadata")]
         public void GivenIsUploadedToDropbox(string p0)
         {
             RequestBuilder b = new GetMetadata();

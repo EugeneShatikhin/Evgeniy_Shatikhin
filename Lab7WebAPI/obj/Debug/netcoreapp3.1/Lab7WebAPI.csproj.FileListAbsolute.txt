@@ -106,3 +106,6 @@ C:\Users\EShat\source\repos\Lab7WebAPI\Lab7WebAPI\obj\Debug\netcoreapp3.1\Lab7We
 C:\Users\EShat\source\repos\Lab7WebAPI\Lab7WebAPI\obj\Debug\netcoreapp3.1\Lab7WebAPI.dll
 C:\Users\EShat\source\repos\Lab7WebAPI\Lab7WebAPI\obj\Debug\netcoreapp3.1\Lab7WebAPI.pdb
 C:\Users\EShat\source\repos\Lab7WebAPI\Lab7WebAPI\obj\Debug\netcoreapp3.1\Lab7WebAPI.genruntimeconfig.cache
+C:\Users\EShat\source\repos\Lab7WebAPI\Lab7WebAPI\bin\Debug\netcoreapp3.1\IoC.dll
+C:\Users\EShat\source\repos\Lab7WebAPI\Lab7WebAPI\bin\Debug\netcoreapp3.1\TeamCity.ServiceMessages.dll
+C:\Users\EShat\source\repos\Lab7WebAPI\Lab7WebAPI\obj\Debug\netcoreapp3.1\Lab7WebAPI.csproj.CoreCompileInputs.cache
