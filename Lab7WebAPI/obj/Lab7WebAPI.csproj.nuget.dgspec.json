@@ -66,6 +66,10 @@
             "SpecFlow.NUnit": {
               "target": "Package",
               "version": "[3.9.40, )"
+            },
+            "TeamCity.VSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.0.30, )"
             }
           },
           "imports": [

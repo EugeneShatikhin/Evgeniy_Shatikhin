@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "dKnewCyM8RaUl+/eMinw1Ccs/FFCaTZZdqSmCPf8RbMsXJiZA6AIj+SunbLhl3zVM7QghUn6hyGpl2L0NVZTEw==",
+  "dgSpecHash": "94nutPNtQkTq9d7nasSFAm3/qdYh8u1Yz2ubSfD47CSJWBIEpdNTUUbajveYDAR5hzxybXe59nUqLIehjfs4CA==",
   "success": true,
   "projectFilePath": "C:\\Users\\EShat\\source\\repos\\Lab7WebAPI\\Lab7WebAPI\\Lab7WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EShat\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\EShat\\.nuget\\packages\\gherkin\\22.0.0\\gherkin.22.0.0.nupkg.sha512",
+    "C:\\Users\\EShat\\.nuget\\packages\\ioc.container\\1.3.7\\ioc.container.1.3.7.nupkg.sha512",
     "C:\\Users\\EShat\\.nuget\\packages\\microsoft.codecoverage\\17.0.0\\microsoft.codecoverage.17.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\EShat\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\1.0.3\\microsoft.dotnet.platformabstractions.1.0.3.nupkg.sha512",
@@ -96,6 +97,8 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.threading.tasks.extensions\\4.0.0\\system.threading.tasks.extensions.4.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
+    "C:\\Users\\EShat\\.nuget\\packages\\teamcity.servicemessages\\3.0.13\\teamcity.servicemessages.3.0.13.nupkg.sha512",
+    "C:\\Users\\EShat\\.nuget\\packages\\teamcity.vstest.testadapter\\1.0.30\\teamcity.vstest.testadapter.1.0.30.nupkg.sha512",
     "C:\\Users\\EShat\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
   "logs": []
