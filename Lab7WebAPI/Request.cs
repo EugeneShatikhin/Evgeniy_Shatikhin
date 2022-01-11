@@ -8,7 +8,7 @@ namespace Lab7WebAPI.Features
 {
     static class Authorization
     {
-        public static string Token = "Bearer 5WBa0ZB2j90AAAAAAAAAATS3Zf1Vwm-D3p_YIAXGHwpSWtmTSKhwYi6DkIag3Ha8";
+        public static string Token = "Bearer ";
     }
     class Header
     {
